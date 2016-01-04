@@ -6,5 +6,5 @@ block pagecontent
   each val in pages
     ul
       li
-        a(href=val.url)
+        a(href=globals.base + val.url)
           = val.title

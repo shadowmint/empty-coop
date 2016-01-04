@@ -33,7 +33,7 @@ import './gulp/imagemin';
 import './gulp/fonts';
 
 /// Register child tasks
-manager.debug = true;
+manager.debug = false;
 manager.tasks(config);
 
 // ----------------------------------------------------------------------------

@@ -11,19 +11,19 @@ head
     meta(name='viewport', content='width=device-width,initial-scale=1.0')
     title Empty Coop
     <!--[if gt IE 8]><!-->
-    <link rel="stylesheet" href="../stylesheets/styles.css" />
+    link(rel="stylesheet", href=globals.base+'/stylesheets/styles.css')
     <!--<![endif]-->
     <!--[if lt IE 9]>
-    <link rel="stylesheet" href="../stylesheets/styles-nomq.css" />
+    link(rel="stylesheet", href=globals.base+'/stylesheets/styles-nomq.css')
     <![endif]-->
     //- Important early load external scripts
-    script(src='scripts/modernizr.min.js')
+    script(src=globals.base+'scripts/modernizr.min.js')
     //- Icons for browsers + mobile devices, bookmarks, etc.
-    link(rel='shortcut icon', href='/favicon.ico')
-    link(rel='apple-touch-icon-precomposed', href='../images/apple-touch-icon-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='../images/apple-touch-icon-72x72-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='../images/apple-touch-icon-114x114-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='../images/apple-touch-icon-144x144-precomposed.png')
+    link(rel='shortcut icon', href=globals.base+'/favicon.ico')
+    link(rel='apple-touch-icon-precomposed', href=globals.base+'/images/apple-touch-icon-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href=globals.base+'/images/apple-touch-icon-72x72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href=globals.base+'/images/apple-touch-icon-114x114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href=globals.base+'/images/apple-touch-icon-144x144-precomposed.png')
     //- Meta configuration for Search Engines and Facebook
     meta(name='description', content='')
     meta(name='keywords', content='')
@@ -37,5 +37,6 @@ body(class="#{metadata.viewclass}")
     include ../partials/header
     block pagecontent
     //- JavaScript libraries and UX based code
-    script(src='./scripts/app.min.js')
+    script(src=globals.base+'./scripts/app.min.js')
+    = "metadata: using base url: " + globals.base
 |</html>

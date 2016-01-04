@@ -8,7 +8,7 @@ export class Modernizr extends Task {
 
   constructor(config) {
     super('Modernizr', config);
-    this.dest = `${config.build}/scripts/modernizer.min.js`;
+    this.dest = `${config.build}/scripts`;
     this.src = [`${config.build}/**/*.js}`, `${config.build}/**/*.css`, `!${this.dest}`];
   }
 

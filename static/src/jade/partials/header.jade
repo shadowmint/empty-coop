@@ -3,8 +3,8 @@ header(role="banner" aria-label="Site header")
         ul
             -each val, index  in globals.sitenavlinks
                 li
-                    a(href=val.url)= val.title
+                    a(href=globals.base+val.url)= val.title
                     if(val.subnav)
                         ul
                             -each subval, index in val.subnav
-                                li: a(href=subval.url)= subval.title
+                                li: a(href=globals.base+subval.url)= subval.title
