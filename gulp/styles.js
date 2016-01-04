@@ -15,7 +15,7 @@ export class Styles extends Task {
   constructor(config) {
     super("Styles", config);
     this.src_folder = `${config.src}/sass/`;
-    this.src_watch = `${this.src_folder}/*/**.scss`;
+    this.src_watch = `${this.src_folder}/**/*.scss`;
     this.src = [`${this.src_folder}/*.scss`, `!${this.src_folder}/_*.scss`];
     this.dest = `${config.build}/stylesheets`;
   }

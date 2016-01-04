@@ -17,7 +17,7 @@ head
     link(rel="stylesheet", href=globals.base+'/stylesheets/styles-nomq.css')
     <![endif]-->
     //- Important early load external scripts
-    script(src=globals.base+'scripts/modernizr.min.js')
+    script(src=globals.base+'/scripts/modernizr.min.js')
     //- Icons for browsers + mobile devices, bookmarks, etc.
     link(rel='shortcut icon', href=globals.base+'/favicon.ico')
     link(rel='apple-touch-icon-precomposed', href=globals.base+'/images/apple-touch-icon-precomposed.png')
@@ -33,10 +33,10 @@ head
     meta(property='og:image', content='images/facebook.png')
     meta(property='og:site_name', content='')
     meta(property='og:description', content='')
-body(class="#{metadata.viewclass}")
+body(class="#{metadata.viewclass}",data-siteroot=globals.base)
     include ../partials/header
     block pagecontent
     //- JavaScript libraries and UX based code
-    script(src=globals.base+'./scripts/app.min.js')
+    script(src=globals.base+'/scripts/app.min.js')
     = "metadata: using base url: " + globals.base
 |</html>

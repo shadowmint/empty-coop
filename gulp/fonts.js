@@ -14,7 +14,7 @@ export class Fonts extends Task {
     super('Fonts', config);
 
     // CSS paths
-    this.eggbox_mixin = utils.path("static/src/sass/utils/_eggbox.scss");
+    this.eggbox_mixin = `${config.src}/sass/utils/_eggbox.scss`;
 
     // Font paths
     this.fontsvg = utils.path("static/src/custom-eggbox");
