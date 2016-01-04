@@ -1,4 +1,4 @@
-base = ""
+base = "/empty-fork"
 
 [sitenavlinks.Home]
 title = "Home"

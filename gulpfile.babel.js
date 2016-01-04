@@ -13,7 +13,7 @@ var config = {};
 ut.root = __dirname;
 config.src = ut.path('static/src');
 config.tmp = ut.path('static/tmp');
-config.build = ut.path('static/build');
+config.build = ut.path('static/build/empty-fork');
 
 // Dev server
 config.server_port = 3000;

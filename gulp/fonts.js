@@ -18,9 +18,9 @@ export class Fonts extends Task {
 
     // Font paths
     this.fontsvg = utils.path("static/src/custom-eggbox");
-    this.fonts = utils.path("static/build/fonts");
-    this.eggbox_demo = utils.path("static/build/fonts/eggbox/demo.html");
-    this.eggbox_demo_folder = utils.path("static/build/fonts/eggbox");
+    this.fonts = `${config.build}/fonts`;
+    this.eggbox_demo = `${config.build}/fonts/eggbox/demo.html`;
+    this.eggbox_demo_folder = `${config.build}/fonts/eggbox`;
     this.font_name = "eggbox";
     this.font_path = "../fonts/eggbox"; // Used on frontend
 
