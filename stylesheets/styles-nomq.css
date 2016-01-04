@@ -938,9 +938,6 @@ a {
 /**
  * Selection styles
  */
-::-moz-selection {
-  color: #fff;
-  background: #aa3025; }
 ::selection {
   color: #fff;
   background: #aa3025; }

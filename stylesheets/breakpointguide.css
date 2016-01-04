@@ -46,14 +46,14 @@
         content: "mountain"; }
     .breakpointguide-value:before {
       content: "min-width: 800px"; } }
-  @media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
     .breakpointguide-label {
       background: #34a5ef; }
       .breakpointguide-label:before {
         content: "eagleeyes"; }
     .breakpointguide-value:before {
       content: "min-device-pixel-ratio: 2min-resolution: 192dpi"; } }
-  @media (-webkit-min-device-pixel-ratio: 2) and (-webkit--webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-resolution: 192dpi) {
+  @media (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-resolution: 192dpi) {
     .breakpointguide-label {
       background: #5f34ef; }
       .breakpointguide-label:before {
