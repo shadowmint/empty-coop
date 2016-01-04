@@ -1,0 +1,62 @@
+/**
+ * Breakpoint helper
+ * A visual tool to help the developer see
+ * when a breakpoint is triggered
+ */
+/**
+ * Set styles for the
+ * breakpoint helper
+ */
+.breakpointguide {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background: #fff;
+  color: #333;
+  font: normal normal 12px/1.5em sans-serif; }
+  .breakpointguide-label, .breakpointguide-value {
+    display: block;
+    padding: .5em 1em; }
+  .breakpointguide-label {
+    background: #EF4034;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    color: white;
+    text-transform: uppercase; }
+  .breakpointguide-value {
+    font-weight: bold; }
+  @media screen and (min-width: 12.5em) {
+    .breakpointguide-label {
+      background: #efdc34; }
+      .breakpointguide-label:before {
+        content: "grain"; }
+    .breakpointguide-value:before {
+      content: "min-width: 200pxmedia: screen"; } }
+  @media (min-width: 18.75em) {
+    .breakpointguide-label {
+      background: #66ef34; }
+      .breakpointguide-label:before {
+        content: "pebble"; }
+    .breakpointguide-value:before {
+      content: "min-width: 300px"; } }
+  @media (min-width: 50em) {
+    .breakpointguide-label {
+      background: #34ef9e; }
+      .breakpointguide-label:before {
+        content: "mountain"; }
+    .breakpointguide-value:before {
+      content: "min-width: 800px"; } }
+  @media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+    .breakpointguide-label {
+      background: #34a5ef; }
+      .breakpointguide-label:before {
+        content: "eagleeyes"; }
+    .breakpointguide-value:before {
+      content: "min-device-pixel-ratio: 2min-resolution: 192dpi"; } }
+  @media (-webkit-min-device-pixel-ratio: 2) and (-webkit--webkit-min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-resolution: 192dpi) {
+    .breakpointguide-label {
+      background: #5f34ef; }
+      .breakpointguide-label:before {
+        content: "-webkit-eagleeyes"; }
+    .breakpointguide-value:before {
+      content: "-webkit-min-device-pixel-ratio: 2-webkit-min-resolution: 192dpi"; } }
